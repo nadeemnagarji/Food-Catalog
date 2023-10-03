@@ -12,6 +12,14 @@
 </head>
 <body>
    <header>
+    <div class="sidenav">
+        <button id="close-sidebar" class="closebtn">&times;</button>
+        <!-- Sidebar content goes here -->
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <button id="open-sidebar" class="openbtn"><img src="New folder/shape.svg"></button>
     <nav>
         <img src="New folder/Cookpal 1.svg"> 
         <div class="nav-bar">
@@ -30,7 +38,7 @@
    <section class="search">
     <h2>Search For Recipes</h2>
     <div class="search-bar">
-        <input type="text" placeholder="Search for recipes...">
+        <input type="text" id="searchInput" placeholder="Search for recipes...">
         <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
    </section>

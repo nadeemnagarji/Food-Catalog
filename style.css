@@ -9,6 +9,57 @@ html {
     color:black;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333; /* Background color of the sidebar */
+    overflow-x: hidden;
+    transition: 0.5s; /* Transition effect to slide in the sidebar */
+    padding-top: 60px; /* Padding to push content down when the sidebar is open */
+}
+
+/* Style for the links inside the sidebar */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    transition: 0.3s; /* Transition effect for the links */
+}
+
+/* Add a hover effect for the links */
+.sidenav a:hover {
+    color: #EAAA00; /* Change link color on hover */
+}
+
+/* Style for the button that opens the sidebar */
+.openbtn {
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(7, 7, 7);
+    border: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    margin-bottom: 30px;
+    display: none;
+}
+.closebtn{
+    font-size: 2rem;
+    cursor: pointer;
+    background-color:transparent;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 40px;
+    left: 10px;
+}
 /* Apply a basic font and background color */
 body {
     width: 100vw;
@@ -384,6 +435,13 @@ body{
     align-items: center;
     width: 100vw;
     
+}
+.openbtn{
+    display: block;
+}
+.nav-bar{
+    
+    display: none;
 }
     .search{
         width: 80%;

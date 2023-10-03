@@ -121,6 +121,9 @@ let arr = [
     }
 ]
 
+
+
+
 const menu = document.getElementById("menu")
 const form = document.getElementById("form")
 const above4Radio = document.getElementById('above4Radio');
@@ -338,5 +341,45 @@ for(let i=0;i<arr.length;i++){
     const card = createCard(title, rating, timeToCook,ImgSrc,type)
   menu.appendChild(card)
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const openButton = document.getElementById('open-sidebar');
+    const closeButton = document.getElementById('close-sidebar');
+    const sidenav = document.querySelector('.sidenav');
+
+    // Function to open the sidebar
+    openButton.addEventListener('click', function () {
+        sidenav.style.width = '250px'; // Adjust the width as needed
+        closeButton.style.display="block"
+    });
+
+    // Function to close the sidebar
+    closeButton.addEventListener('click', function () {
+        sidenav.style.width = '0';
+        closeButton.style.display="none"
+    });
+});
+ 
+const searchInput = document.getElementById('searchInput');
+/* searching with the names dynamically
+*/
+
+searchInput.addEventListener('input', function () {
+    const searchQuery = searchInput.value.toLowerCase(); // Get the lowercase search query
+   
+    // Filter recipes based on the search query
+    const filteredRecipes = arr.filter(recipe => recipe.name.toLowerCase().includes(searchQuery));
+    console.log(filteredRecipes);
+    // Clear the menu container
+    menu.innerHTML = '';
+
+    // Display the filtered recipes
+    for (const recipe of filteredRecipes) {
+        const card = createCard(recipe.name, recipe.rating, recipe.time, recipe.imageSrc, recipe.type);
+        menu.appendChild(card);
+    }
+});
+
+
 
 
