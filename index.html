@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+   <header>
+    <nav>
+        <img src="New folder/Cookpal 1.svg"> 
+        <div class="nav-bar">
+           <div class="links">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+        <img src="New folder/Ellipse 2.svg">
+        </div>
+    </nav>
+
+        <img id="hero-image" src="New folder/hero.svg">
+
+   </header>
+   <section class="search">
+    <h2>Search For Recipes</h2>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for recipes...">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+   </section>
+   <section class="buttons">
+    <button id="btn-orange" onclick="All()">All Recipes <img src="New folder/Path.svg"></i></button>
+    <button id="btn-green" onclick="onlyVeg()">Veg Recipes Only <img src="New folder/Path.svg"></i></button>
+    <button id="btn-red" onclick="onlyNonVeg()">Non Veg Recipes <img src="New folder/Path.svg"></i></button>
+   </section>
+
+
+   <section class="display">
+    <div class="filter">
+        <h4>Filter</h4>
+        <div class="ratings">
+            <p>Ratings</p>
+            <form id="form">
+                <label>
+                    <input type="radio" name="scoreFilter" value="above4" id="above4Radio">
+                    4 and above
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="scoreFilter" value="below4" id="below4Radio">
+                    Below 4
+                </label>
+            </form>
+        
+
+        </div>
+    </div>
+    <div class="menus" id="menu">
+        <div class="card">
+           <img src="https://source.unsplash.com/random?veggies">
+           <p id="type">veg</p>
+           <div class="card-info">
+           <div class="main-title"><p>Russian Salad</p><div><img src="New folder/Star.svg"><span>4.5</span></div> </div>
+
+            <div class="timeToCook"><p>40 min</p><div><img src="New folder/like.svg"><img src="New folder/comments.svg"></div></div>
+           </div>
+        </div>
+    
+      
+    </div>
+
+   </section>
+
+   <footer>
+    <div class="footer-1">
+        <img src="New folder/Cookpal 1.svg">
+        <P>Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!</P>
+    </div>
+    <div class="footer-2">
+        <h4>Company</h4>
+        <a href="">Home</a>
+        <a href="">Explore</a>
+        <a href="">Team</a>
+        <a href="">About us</a>
+        <a href="">Activity</a>
+    </div>
+    <div class="footer-3">
+        <h4>Resources</h4>
+        <a href="">Blog</a>
+        <a href="">Use Cases</a>
+        <a href="">Testimonials</a>
+        <a href="">Insights</a>
+    </div>
+    <div class="footer-4">
+        <img src="New folder/Cookpal 1.svg">
+        <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
+        <div class="footer-search">
+            <input type="text" placeholder="Your Email">
+            <button>Subscribe</i></button>
+        </div>
+    </div>
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
