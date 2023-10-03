@@ -59,6 +59,7 @@ html {
     position: fixed;
     top: 40px;
     left: 10px;
+    display: none;
 }
 /* Apply a basic font and background color */
 body {

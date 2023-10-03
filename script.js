@@ -351,6 +351,7 @@ document.addEventListener('DOMContentLoaded', function () {
     openButton.addEventListener('click', function () {
         sidenav.style.width = '250px'; // Adjust the width as needed
         closeButton.style.display="block"
+        
     });
 
     // Function to close the sidebar
